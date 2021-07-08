@@ -20,6 +20,10 @@ fieldset {
     margin: 20px 0;
 }
 
+fieldset p label{
+    cursor: pointer;
+}
+
 fieldset p, h5 {
     display: inline;
     padding-left: 20px;
@@ -60,4 +64,23 @@ fieldset h5 {
     0% {color: red;}
     50% {color: orange;}
     100% {color: red;}
+}
+
+#platinum {
+    display: block;
+    text-align: center;
+    color: darkcyan;
+}
+
+#platinum a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    animation: color-anchor 5s infinite;
+}
+
+@keyframes color-anchor {
+    0% {color: red;}
+    50% {color: blue}
+    100% {color:darkviolet}
 }
