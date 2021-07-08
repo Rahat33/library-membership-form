@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Card Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Heading -->
+    <h1>Library Card Form</h1>
+
+    <!-- form -->
+    <form action="">
+
+        <!-- Personal Info -->
+        <div>
+            <p>Name : <input type="text" placeholder="Type Your Name" class="box-width"></p>
+            <p>Email : <input type="email" placeholder="Enter Your Email" class="box-width"></p>
+        </div>
+
+        <!-- Membership Plan Radio Box -->
+        <fieldset>
+            <legend>Your Plan for Library Membership Card</legend>
+
+            <p class="tooltip">
+                <label for="week"><input type="radio" id="week" name="plan"> <span class="tooltip-text">৳ 20 /
+                        Week</span>Weekly</label>
+            </p>
+            <p class="tooltip">
+                <label for="month"><input type="radio" id="month" name="plan"><span class="tooltip-text">৳ 50 /
+                        Month</span> Monthly</label>
+            </p>
+            <p class="tooltip">
+                <label for="year"><input type="radio" id="year" name="plan"><span class="tooltip-text">৳ 300 /
+                        Year</span>Yearly
+                </label>
+            </p>
+            <h5>50% discount on our Yearly Plan</h5>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

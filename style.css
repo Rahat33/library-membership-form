@@ -1,0 +1,59 @@
+* {
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(60, 57, 77);
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+form {
+    margin: 10px 30px;
+    padding: 10px;
+    border: 2px solid steelblue;
+    background-color:rgb(235, 227, 215);
+}
+
+fieldset p, h5 {
+    display: inline;
+    padding-left: 20px;
+}
+
+.box-width {
+    margin-left: 5px;
+    width: 200px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    position: absolute;
+    left: 38px;
+    top: 15px;
+    color: snow;
+    width: max-content;
+    border: 1px solid teal;
+    background-color: teal;
+    padding: 3px 5px;
+    border-radius: 8px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+fieldset h5 {
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% {color: red;}
+    50% {color: orange;}
+    100% {color: red;}
+}
