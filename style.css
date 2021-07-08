@@ -16,6 +16,10 @@ form {
     background-color:rgb(235, 227, 215);
 }
 
+fieldset {
+    margin: 20px 0;
+}
+
 fieldset p, h5 {
     display: inline;
     padding-left: 20px;
