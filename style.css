@@ -9,11 +9,58 @@ body {
     opacity: .9;
 }
 
-h1 {
+#display {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: 3%;
+}
+
+#display div {
+    width: 60%;
+    flex-direction: column;
+}
+
+#display div h2 {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+#display div p {
+    padding-right: 25%;
+}
+
+#display div p .base {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(60, 57, 77);
+}
+
+#display button {
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    background-color: rgb(90, 113, 122);
+    color: rgb(250, 248, 246);
+    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 2px;
+    text-transform: capitalize;
+}
+#display button:hover {
+    background-color: rgb(46, 32, 134);
+}
+
+header h1 {
     padding: 20px 0;
     text-align: center;
     color:seashell;
     font-size: 42px;
+    text-transform: uppercase;
 }
 
 form {
@@ -40,7 +87,9 @@ fieldset p, h5 {
 
 .box-width {
     margin-left: 5px;
-    width: 200px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .tooltip {
@@ -113,4 +162,22 @@ fieldset h5 {
     text-decoration: none;
     font-size: 14px;
     color: seashell;
+}
+
+form footer {
+    background-color: black;
+    height: 100px;
+}
+
+form footer h4 {
+    padding: 20px 0 5px;
+}
+
+form footer h4 a {
+    color: cadetblue;
+}
+
+form footer h4, p{
+    text-align: center;
+    color: white;
 }
