@@ -4,16 +4,25 @@
     color: rgb(60, 57, 77);
 }
 
+body {
+    background: url(images/library.jpg);
+    opacity: .9;
+}
+
 h1 {
     padding: 20px 0;
     text-align: center;
+    color:seashell;
+    font-size: 42px;
 }
 
 form {
-    margin: 10px 30px;
+    margin: auto;
+    justify-content: center;
     padding: 10px;
     border: 2px solid steelblue;
     background-color:rgb(235, 227, 215);
+    width: 70%;
 }
 
 fieldset {
