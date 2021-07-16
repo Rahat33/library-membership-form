@@ -37,7 +37,7 @@ body {
     color: rgb(60, 57, 77);
 }
 
-#display button {
+#display .btn button{
     height: 40px;
     width: 150px;
     position: absolute;
@@ -143,9 +143,6 @@ fieldset h5 {
     50% {color: blue}
     100% {color:darkviolet}
 }
-/* .button legend {
-    font-size: 18px;
-} */
 
 .button div {
     width: auto;
@@ -182,3 +179,80 @@ form footer h4, p{
     text-align: center;
     color: white;
 }
+
+/* media query for small screen laptop & tablet */
+
+@media only screen and (min-width:48em) and (max-width: 64.0625em) {
+    #display {
+        width: 100%;
+    }
+
+    #display .optimize{
+        display: flex;
+        flex-direction: row;
+          
+        align-items: center ;    
+    }
+
+    #display div p {
+        padding: 0;
+    }
+
+    #display .btn button {
+        width: 100px;
+        left: 65%;
+
+    }
+}
+
+@media only screen and (max-width : 30em){
+
+    header h1{
+        font-size: 32px;
+        /* animation: color-change 5s infinite; */
+    }
+
+    /* @keyframes color-change {
+        0% {color: darkgreen;}
+        50% {color: blueviolet;}
+        100% {color: darkcyan;}      
+    } */
+    #display {
+        margin-bottom: 50px;
+    }
+
+    #display div {
+        width: 100%;
+        
+    }
+
+    #display h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .optimize {
+        width: 100%;
+    }
+
+    .optimize input {
+        border: 2px solid skyblue;
+        padding: 5px 20px;
+    }
+
+    .base {
+        display: none;
+    }
+
+    #display .btn button{
+        position: absolute;
+        top: 220px;
+        left: 10px;
+    }
+
+    fieldset {
+        margin: 20px 0;
+    }
+}
+    
